@@ -10,16 +10,21 @@ const CategoriesBar = () => {
     const [cats , setCats] = useState([])
     const categories = []
 
-    useEffect(() => {
-        
-        categories.push("All")
-        products.forEach(element => {
-            if (!categories.includes(element.category)) {
-                categories.push(element.category)
-            }
-        });
-        setCats(categories)
-    },[products])
+
+        const setCategories=()=>{
+            categories.push("All")
+            products.forEach(element => {
+                if (!categories.includes(element.category)) {
+                    categories.push(element.category)
+                }
+            });
+            setCats(categories)
+        }
+
+      
+       useEffect(()=>{
+        setCategories()
+       })
 
     const dispatch = useDispatch();
 
