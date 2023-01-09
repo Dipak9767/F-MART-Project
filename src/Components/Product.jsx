@@ -28,8 +28,9 @@ const Product = ({ product }) => {
   }
 
   return (
-    <Link to={`product/${product.id}`}>
+    
     <div className="product">
+    <Link to={`product/${product.id}`}></Link>
       <img src={product.images[0]} alt="" />
       <h3 >{product.title}</h3>
       <span>${product.price}</span>
@@ -39,7 +40,7 @@ const Product = ({ product }) => {
         }
       </button>
 
-    </div></Link>
+    </div>
   )
 }
 
