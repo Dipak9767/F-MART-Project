@@ -1,0 +1,84 @@
+.navbar{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 3rem;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    right: 0%;
+    z-index: 4;
+    background-color: white;
+    box-shadow: rgb(224, 104, 128) 0px 5px 20px 0px;
+}
+
+.navbar img{
+    width: 70px;
+}
+.navbar h1{
+    font-size:4rem;
+    flex: 5;
+    text-align: center;
+}
+.title{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.cartBar{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+}
+.cart-icon{
+    color: black;
+    font-size: 2.5rem;
+}
+a{
+    text-decoration: none;
+}
+.count{
+    position: absolute;
+    top: 3px;
+    left: 17px;
+    font-size: large;
+    z-index: 3;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+@media screen and (max-width: 426px) {
+    .navbar{
+     width: 100%;
+     padding: 1rem 0.3rem;
+     box-sizing: border-box;
+    }
+    .navbar h1{
+        font-size: large;
+    }
+    .cart-icon{
+        color: black;
+        font-size: 2rem;
+    }
+    .count{
+        font-size: small;
+    }
+    .navbar img{
+        width: 40px;
+    }
+  }
+  @media screen and (min-width: 427px) and (max-width: 768px) {
+    .navbar{
+     width: 100%;
+     padding: 2rem 1.5rem;
+     box-sizing: border-box;
+    }
+    .navbar h1{
+        font-size: 1.8rem;
+    }
+  }

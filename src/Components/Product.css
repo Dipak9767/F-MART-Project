@@ -1,0 +1,129 @@
+.product{
+    height: 300px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    box-sizing: border-box;
+    /* border: 1px solid crimson; */
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.product img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    flex: 3; 
+}
+button{
+    padding: 0.4rem 0.7rem;
+    outline: none;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+.active{
+    color: white;
+    background-color: crimson;
+    border: none;
+    cursor: pointer;
+}
+.deactive{
+    background-color: white;
+    color: crimson;
+    border: 1px solid crimson;
+    cursor: pointer;
+}
+.product:hover{
+    box-shadow: rgb(224, 104, 128) 0px 5px 20px 0px;
+    transform: scale(1.1);
+}
+button:hover{
+    background-color: white;
+    color: crimson;
+    border: 1px solid crimson;
+}
+
+@media screen and (max-width: 426px) {
+    .product{
+        height: 170px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0.5rem;
+        box-sizing: border-box;
+        /* border: 1px solid crimson; */
+        padding: 1rem 0;
+        margin: 1rem 0;
+        transition: all 0.4s ease-in-out;
+    }
+    .product img{
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        flex: 3; 
+    }
+    .product h3{
+        font-size: 10px;
+        flex: 1;
+    }
+    .product span{
+        font-size: 10px;
+        flex: 1;
+    }
+    .product button{
+        font-size: 10px;
+        padding: 5px;
+        outline: none;
+        border-radius: 5px;
+        transition: all 0.4s ease-in-out;
+    }
+    
+}
+@media screen and (min-width: 426px) and (max-width: 768px){
+    .product{
+        height: 170px;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0.5rem;
+        box-sizing: border-box;
+        /* border: 1px solid crimson; */
+        padding: 0.8rem 0;
+        margin: 1rem 0;
+        transition: all 0.4s ease-in-out;
+    }
+    .product img{
+        width: 90px;
+        height: 90px;
+        object-fit: contain;
+        flex: 3; 
+    }
+    .product h3{
+        font-size: 10px;
+        flex: 1;
+    }
+    .product span{
+        font-size: 10px;
+        flex: 1;
+    }
+    .product button{
+        font-size: 10px;
+        padding: 0.4rem 0.4rem;
+        outline: none;
+        border-radius: 10px;
+        transition: all 0.4s ease-in-out;
+        flex: 1;
+    }
+}

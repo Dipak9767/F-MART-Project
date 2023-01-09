@@ -1,0 +1,148 @@
+.item-Container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    box-sizing: border-box;
+    transition: all 0.4s ease-in-out;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.item-Container img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.item-Container .info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info {
+    font-size: small;
+    font-weight: 900;
+}
+
+.item-Container .quantity {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.item-Container:hover {
+    box-shadow: rgb(224, 104, 128) 0px 5px 20px 0px;
+    transform: scale(1.05);
+}
+
+.info button {
+    padding: 0.3rem 0.7rem;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    background-color: crimson;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.quantity button {
+    padding: 0.2rem 0.8rem;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    background-color: crimson;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    font-weight: bold;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: white;
+    color: crimson;
+    border: 1px solid crimson;
+}
+
+@media screen and (max-width: 425px){
+    .item-Container {
+        width: 100%;
+        height: 80px;
+        padding: 0.5rem;
+    }
+    .item-Container img {
+        width: 20%;
+       height: 50px;
+        object-fit: contain;
+    }
+    
+    .item-Container .info {
+        font-size: 0.5rem;
+        text-align: center;
+    }
+    .item-Container button {
+        font-size: smaller;
+    }
+    .item-Container .quantity span {
+        font-size: 0.6rem;
+    }
+
+    .quantity .btn {
+        font-size: smaller;
+        padding: 7px;
+        width: 5px;
+        height: 5px;
+        font-weight: 50;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 424px) and (max-width: 768px) {
+    .item-Container {
+        width: 100%;
+        height: 80px;
+        padding: 0.5rem;
+    }
+
+    .item-Container .info {
+        font-size: 0.5rem;
+        text-align: center;
+    }
+
+    .item-Container button {
+        font-size: smaller;
+    }
+
+    .item-Container .quantity span {
+        font-size: 0.6rem;
+    }
+
+    .quantity .btn {
+        font-size: smaller;
+        padding: 7px;
+        width: 5px;
+        height: 5px;
+        font-weight: 50;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .item-Container img {
+        width: 20%;
+       height: 50px;
+        object-fit: contain;
+    }
+}

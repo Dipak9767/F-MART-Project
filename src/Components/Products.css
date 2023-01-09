@@ -1,0 +1,22 @@
+.products{
+    /* background-color: aquamarine; */
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+}
+@media screen and (max-width: 425px) {
+    .products{
+        padding : 1rem;
+    }
+}
+@media screen and (min-width: 424px) and (max-width: 768px){
+    .products{
+        padding-top :1rem; ;
+    }
+}

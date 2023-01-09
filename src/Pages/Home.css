@@ -1,0 +1,40 @@
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 3rem;
+}
+section .heading{
+    font-size: 3rem;
+    border-bottom: 3px solid crimson;
+    padding: 2px 5rem;
+}
+
+
+@media screen and (max-width: 425px) {
+    section{
+        width: 100%px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+    section .heading{
+        font-size: 1rem;
+        padding: 2px 2rem;
+    }
+}
+@media screen and (min-width: 424px) and (max-width: 768px){
+    section{
+        gap: 0.5rem;
+    }
+    section .heading{
+        font-size: 1.5rem;
+        padding: 2px 2rem;
+    }
+}
