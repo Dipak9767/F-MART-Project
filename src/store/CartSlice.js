@@ -14,7 +14,7 @@ const cartSlice = createSlice({
         },
         increment(state , action){
             state.data = state.data.map((item)=>{
-             if(item.id === action.payload){
+             if(item.id === action.payload ){
                  return {...item,quantity:item.quantity+1}
              }
              return item;
@@ -23,7 +23,7 @@ const cartSlice = createSlice({
          },
          decrement(state , action){
             state.data = state.data.map((item)=>{
-             if(item.id === action.payload){
+             if(item.id === action.payload && item.quantity > 1){
                  return {...item,quantity:item.quantity-1}
              }
              return item;

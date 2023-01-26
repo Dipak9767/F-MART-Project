@@ -8,6 +8,7 @@ const CartItem = ({item}) => {
 
   const dispatch = useDispatch();
 
+
   return (
     <div className="item-Container">
       <img src=

@@ -28,10 +28,11 @@ const Product = ({ product }) => {
   }
 
   return (
-    
+
     <div className="product">
-    <Link to={`product/${product.id}`}></Link>
-      <img src={product.images[0]} alt="" />
+      <Link to={`product/${product.id}`}>
+        <img src={product.images[0]} alt="" />
+      </Link>
       <h3 >{product.title}</h3>
       <span>${product.price}</span>
       <button onClick={() => addHandler(product)} className={flag ? 'deactive' : 'active'}>
